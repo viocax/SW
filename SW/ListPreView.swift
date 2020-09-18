@@ -19,8 +19,16 @@ struct ListPreView: View {
     }
 
     var body: some View {
-        List(restaurantNames, id: \.id) { restaurant in
-            Row(restaurant: restaurant)
+        NavigationView {
+            List(restaurantNames.indices) { index in
+                if (0...1).contains(index) {
+                    BigRow(restaurant: restaurantNames[index])
+                } else {
+                    Row(restaurant: restaurantNames[index])
+                }
+            }
+            .navigationBarTitle("Restaurants")
+            .foregroundColor(.black)
         }
     }
 }
@@ -49,3 +57,30 @@ private struct Row: View {
         }
     }
 }
+
+private struct BigRow: View {
+    var restaurant: Restaurant
+    var body: some View {
+        ZStack {
+            Image(restaurant.image)
+                .resizable()
+                .aspectRatio(contentMode: .fill)
+                .frame(height: 200)
+                .cornerRadius(10)
+                .overlay(
+                    Rectangle()
+                        .foregroundColor(.black)
+                        .contrast(20)
+                        .opacity(0.1)
+                )
+
+            Text(restaurant.name)
+                .font(.system(.title, design: .rounded))
+                .fontWeight(.black)
+                .foregroundColor(.white)
+        }
+    }
+}
+
+/// MARK: 1
+
