@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct ContentViewNavgationLink: View {
     
     var body: some View {
         NavigationView {
@@ -28,9 +28,9 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct ContentViewNavgationLink_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentViewNavgationLink()
     }
 }
 
