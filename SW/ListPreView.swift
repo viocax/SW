@@ -18,18 +18,42 @@ struct ListPreView: View {
         Restaurant(name: value, image: restaurantImages[index])
     }
 
+//    var body: some View {
+//        NavigationView {
+//            List(restaurantNames.indices) { index in
+//                if (0...1).contains(index) {
+//                    BigRow(restaurant: restaurantNames[index])
+//                } else {
+//                    Row(restaurant: restaurantNames[index])
+//                }
+//            }
+//            .navigationBarTitle("Restaurants")
+//            .foregroundColor(.black)
+//        }
+//    }
     var body: some View {
         NavigationView {
-            List(restaurantNames.indices) { index in
-                if (0...1).contains(index) {
-                    BigRow(restaurant: restaurantNames[index])
-                } else {
-                    Row(restaurant: restaurantNames[index])
+            List {
+                ForEach(restaurantNames) { (restaurant) in
+                    NavigationLink(
+                        destination: BigRow(restaurant: restaurant).padding(),
+                        label: {
+                            Row(restaurant: restaurant)
+                        })
                 }
             }
-            .navigationBarTitle("Restaurants")
-            .foregroundColor(.black)
+            .navigationBarTitle("Restaurants", displayMode: .large)
         }
+    }
+    init() {
+        let navBarAppearacne = UINavigationBarAppearance()
+        navBarAppearacne.largeTitleTextAttributes = [.foregroundColor: UIColor.systemRed, .font: UIFont(name: "ArialRoundedMTBold", size: 35).unsafelyUnwrapped]
+        navBarAppearacne.titleTextAttributes = [.foregroundColor: UIColor.systemRed, .font: UIFont(name: "ArialRoundedMTBold", size: 20).unsafelyUnwrapped]
+        navBarAppearacne.setBackIndicatorImage(UIImage(systemName: "arrow.turn.up.left"), transitionMaskImage: UIImage(systemName: "arrow.turn.up.left"))
+        UINavigationBar.appearance().tintColor = .black
+        UINavigationBar.appearance().standardAppearance = navBarAppearacne
+        UINavigationBar.appearance().scrollEdgeAppearance = navBarAppearacne
+        UINavigationBar.appearance().compactAppearance = navBarAppearacne
     }
 }
 
