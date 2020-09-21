@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0D1C585725062BDE00B750C0 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1C585625062BDE00B750C0 /* CardView.swift */; };
+		0D69C63E25185623004A324F /* SwiftUINavigation in Resources */ = {isa = PBXBuildFile; fileRef = 0D69C63D25185623004A324F /* SwiftUINavigation */; };
 		0D69CE96250873B1002B1443 /* MyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D69CE95250873B1002B1443 /* MyButton.swift */; };
 		0D69CE982508D005002B1443 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D69CE972508D005002B1443 /* State.swift */; };
 		0D69CE9A2508D57A002B1443 /* Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D69CE992508D57A002B1443 /* Path.swift */; };
@@ -40,6 +41,7 @@
 
 /* Begin PBXFileReference section */
 		0D1C585625062BDE00B750C0 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		0D69C63D25185623004A324F /* SwiftUINavigation */ = {isa = PBXFileReference; lastKnownFileType = folder; path = SwiftUINavigation; sourceTree = "<group>"; };
 		0D69CE95250873B1002B1443 /* MyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyButton.swift; sourceTree = "<group>"; };
 		0D69CE972508D005002B1443 /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
 		0D69CE992508D57A002B1443 /* Path.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Path.swift; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 				0D69CE992508D57A002B1443 /* Path.swift */,
 				0D69CE9B2509E1D9002B1443 /* Transition.swift */,
 				0D69CE9D250A0525002B1443 /* ListPreView.swift */,
+				0D69C63D25185623004A324F /* SwiftUINavigation */,
 				0D91A1272505D8AF00166E58 /* Assets.xcassets */,
 				0D91A12C2505D8AF00166E58 /* Info.plist */,
 				0D91A1292505D8AF00166E58 /* Preview Content */,
@@ -253,6 +256,7 @@
 			files = (
 				0D91A12B2505D8AF00166E58 /* Preview Assets.xcassets in Resources */,
 				0D91A1282505D8AF00166E58 /* Assets.xcassets in Resources */,
+				0D69C63E25185623004A324F /* SwiftUINavigation in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
