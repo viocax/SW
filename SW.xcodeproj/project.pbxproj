@@ -21,6 +21,8 @@
 		0D91A12B2505D8AF00166E58 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D91A12A2505D8AF00166E58 /* Preview Assets.xcassets */; };
 		0D91A1362505D8B000166E58 /* SWTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D91A1352505D8B000166E58 /* SWTests.swift */; };
 		0D91A1412505D8B000166E58 /* SWUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D91A1402505D8B000166E58 /* SWUITests.swift */; };
+		0DF7B6122519FDA9005A3D1B /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF7B6112519FDA9005A3D1B /* AccountView.swift */; };
+		0DF7B64A251AFB48005A3D1B /* FormValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF7B649251AFB48005A3D1B /* FormValidator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,8 @@
 		0D91A13C2505D8B000166E58 /* SWUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SWUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D91A1402505D8B000166E58 /* SWUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWUITests.swift; sourceTree = "<group>"; };
 		0D91A1422505D8B000166E58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0DF7B6112519FDA9005A3D1B /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		0DF7B649251AFB48005A3D1B /* FormValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormValidator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +125,8 @@
 				0D69CE9D250A0525002B1443 /* ListPreView.swift */,
 				0D69C64725185769004A324F /* Article.swift */,
 				0D69C6422518575D004A324F /* NavgationLink.swift */,
+				0DF7B6112519FDA9005A3D1B /* AccountView.swift */,
+				0DF7B649251AFB48005A3D1B /* FormValidator.swift */,
 				0D91A1272505D8AF00166E58 /* Assets.xcassets */,
 				0D91A12C2505D8AF00166E58 /* Info.plist */,
 				0D91A1292505D8AF00166E58 /* Preview Content */,
@@ -283,10 +289,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DF7B64A251AFB48005A3D1B /* FormValidator.swift in Sources */,
 				0D69CE9C2509E1D9002B1443 /* Transition.swift in Sources */,
 				0D91A1262505D8AF00166E58 /* ContentView.swift in Sources */,
 				0D69CE9E250A0525002B1443 /* ListPreView.swift in Sources */,
 				0D1C585725062BDE00B750C0 /* CardView.swift in Sources */,
+				0DF7B6122519FDA9005A3D1B /* AccountView.swift in Sources */,
 				0D69C64825185769004A324F /* Article.swift in Sources */,
 				0D91A1242505D8AF00166E58 /* SWApp.swift in Sources */,
 				0D69CE982508D005002B1443 /* State.swift in Sources */,

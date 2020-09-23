@@ -111,7 +111,7 @@ struct PricingView: View {
                     .foregroundColor(textColor)
                     .fixedSize()
             }
-            .frame(width: 70, height: 90, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+            .frame(width: 70, height: 90, alignment: .center)
             .padding(40)
             .background(bgColor)
             .cornerRadius(10)
