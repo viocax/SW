@@ -12,6 +12,24 @@ private struct LoadingView: View {
     @State var isLoading: Bool = false
 
     var body: some View {
+//        HStack {
+//            ForEach(0...4, id: \.self) { index in
+//                Circle()
+//                    .frame(width: 10, height: 10)
+//                    .foregroundColor(.green)
+//                    .scaleEffect(isLoading ? 0 : 1)
+//                    .animation(
+//                        Animation
+//                            .linear(duration: 0.6)
+//                            .repeatForever()
+//                            .delay(0.2 * Double(index))
+//                    )
+//            }
+//            .onAppear() {
+//                self.isLoading = true
+//            }
+//        }
+        //MARK: loadingview
         VStack {
             Text("Loading")
             ZStack {
@@ -79,8 +97,80 @@ private struct Transition_ContentView: View {
     }
 }
 
+private struct View1: View {
+    @State var recordBegin: Bool = false
+    @State var recording: Bool = false
+    var body: some View {
+        ZStack {
+            RoundedRectangle(cornerRadius: recordBegin ? 30 : 5)
+                .frame(width: recordBegin ? 60 : 250, height: 60)
+                .foregroundColor(recordBegin ? .red : .green)
+                .overlay(
+                    Image(systemName: "mic.fill")
+                        .font(.system(.title))
+                        .foregroundColor(.white)
+                        .scaleEffect(recording ? 0.7 : 1)
+                )
+            RoundedRectangle(cornerRadius: recordBegin ? 30 : 5)
+                .trim(from: 0, to: recordBegin ? 0 : 1)
+                .stroke(lineWidth: 5)
+                .frame(width: recordBegin ? 70 : 260, height: 70)
+                .foregroundColor(.green)
+        }
+        .onTapGesture {
+            withAnimation(.spring()) {
+                self.recordBegin.toggle()
+            }
+            withAnimation(Animation.spring().repeatForever().delay(0.5)) {
+                recording.toggle()
+            }
+        }
+    }
+}
+
+private struct View2: View {
+    @State var isShow: Bool = false
+    var body: some View {
+        VStack {
+            RoundedRectangle(cornerRadius: 10)
+                .frame(width: 300, height: 300)
+                .foregroundColor(.green)
+                .overlay(
+                    Text("Show details")
+                        .font(.system(.largeTitle, design: .rounded))
+                        .bold()
+                        .foregroundColor(.white)
+                )
+            if isShow {
+                RoundedRectangle(cornerRadius: 10)
+                    .frame(width: 300, height: 300)
+                    .foregroundColor(.purple)
+                    .overlay(
+                        Text("Well, here is the details")
+                            .font(.largeTitle)
+                            .bold()
+                            .foregroundColor(.white)
+                    )
+                    .transition(
+                        AnyTransition
+                            .offset(x: -600, y: 0)
+                            .combined(with: .scale)
+                            .combined(with: .opacity)
+//                        .asymmetric(insertion: .scale(scale: 0, anchor: .bottom), removal: .offset(x: -600, y: 0))
+                    )
+            }
+        }
+        .onTapGesture {
+            withAnimation(.spring()) {
+                isShow.toggle()
+            }
+        }
+    }
+}
+
 struct Transition_ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        LoadingView()
+//        View1()
+        View2()
     }
 }

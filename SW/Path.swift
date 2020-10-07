@@ -9,7 +9,12 @@ import SwiftUI
 
 private struct PreView: View {
     var body: some View {
-        PathView()
+        VStack {
+            PathView()
+            RedButton {
+                print("ok")
+            }.offset(x: 0, y: 40)
+        }
     }
 }
 
