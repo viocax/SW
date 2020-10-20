@@ -9,9 +9,10 @@ import SwiftUI
 
 @main
 struct SWApp: App {
+    let channelData = ChannelData()
     var body: some Scene {
         WindowGroup {
-            AccountView()
+            FirstView().environmentObject(channelData)
         }
     }
 }
