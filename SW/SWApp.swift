@@ -12,7 +12,8 @@ struct SWApp: App {
     let channelData = ChannelData()
     var body: some Scene {
         WindowGroup {
-            FirstView().environmentObject(channelData)
+//            FirstView().environmentObject(channelData)
+            Guesture()
         }
     }
 }

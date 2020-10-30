@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0D1C585725062BDE00B750C0 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1C585625062BDE00B750C0 /* CardView.swift */; };
 		0D4B5FC5254BA9B30003A8C2 /* Delete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4B5FC4254BA9B30003A8C2 /* Delete.swift */; };
+		0D4B5FCE254BAD6A0003A8C2 /* Guesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4B5FCD254BAD6A0003A8C2 /* Guesture.swift */; };
 		0D69C6432518575D004A324F /* NavgationLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D69C6422518575D004A324F /* NavgationLink.swift */; };
 		0D69C64825185769004A324F /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D69C64725185769004A324F /* Article.swift */; };
 		0D69CE96250873B1002B1443 /* MyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D69CE95250873B1002B1443 /* MyButton.swift */; };
@@ -49,6 +50,7 @@
 /* Begin PBXFileReference section */
 		0D1C585625062BDE00B750C0 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		0D4B5FC4254BA9B30003A8C2 /* Delete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Delete.swift; sourceTree = "<group>"; };
+		0D4B5FCD254BAD6A0003A8C2 /* Guesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Guesture.swift; sourceTree = "<group>"; };
 		0D69C6422518575D004A324F /* NavgationLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavgationLink.swift; sourceTree = "<group>"; };
 		0D69C64725185769004A324F /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 		0D69CE95250873B1002B1443 /* MyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyButton.swift; sourceTree = "<group>"; };
@@ -108,6 +110,14 @@
 			path = ScrollDelete;
 			sourceTree = "<group>";
 		};
+		0D4B5FCC254BAD430003A8C2 /* Guesture */ = {
+			isa = PBXGroup;
+			children = (
+				0D4B5FCD254BAD6A0003A8C2 /* Guesture.swift */,
+			);
+			path = Guesture;
+			sourceTree = "<group>";
+		};
 		0D91A1172505D8AF00166E58 = {
 			isa = PBXGroup;
 			children = (
@@ -144,6 +154,7 @@
 				0DF7B6112519FDA9005A3D1B /* AccountView.swift */,
 				0DF7B649251AFB48005A3D1B /* FormValidator.swift */,
 				0D4B5FC3254BA99A0003A8C2 /* ScrollDelete */,
+				0D4B5FCC254BAD430003A8C2 /* Guesture */,
 				0D947E2A253E86DF00A468C7 /* ShareData */,
 				0D91A1272505D8AF00166E58 /* Assets.xcassets */,
 				0D91A12C2505D8AF00166E58 /* Info.plist */,
@@ -321,6 +332,7 @@
 				0DF7B64A251AFB48005A3D1B /* FormValidator.swift in Sources */,
 				0D69CE9C2509E1D9002B1443 /* Transition.swift in Sources */,
 				0D947E3C253E8A6000A468C7 /* ChannelView.swift in Sources */,
+				0D4B5FCE254BAD6A0003A8C2 /* Guesture.swift in Sources */,
 				0D947E2C253E883D00A468C7 /* FirstView.swift in Sources */,
 				0D91A1262505D8AF00166E58 /* ContentView.swift in Sources */,
 				0D69CE9E250A0525002B1443 /* ListPreView.swift in Sources */,
