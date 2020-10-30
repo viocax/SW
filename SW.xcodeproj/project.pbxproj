@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0D1C585725062BDE00B750C0 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1C585625062BDE00B750C0 /* CardView.swift */; };
+		0D4B5FC5254BA9B30003A8C2 /* Delete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4B5FC4254BA9B30003A8C2 /* Delete.swift */; };
 		0D69C6432518575D004A324F /* NavgationLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D69C6422518575D004A324F /* NavgationLink.swift */; };
 		0D69C64825185769004A324F /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D69C64725185769004A324F /* Article.swift */; };
 		0D69CE96250873B1002B1443 /* MyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D69CE95250873B1002B1443 /* MyButton.swift */; };
@@ -47,6 +48,7 @@
 
 /* Begin PBXFileReference section */
 		0D1C585625062BDE00B750C0 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		0D4B5FC4254BA9B30003A8C2 /* Delete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Delete.swift; sourceTree = "<group>"; };
 		0D69C6422518575D004A324F /* NavgationLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavgationLink.swift; sourceTree = "<group>"; };
 		0D69C64725185769004A324F /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 		0D69CE95250873B1002B1443 /* MyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyButton.swift; sourceTree = "<group>"; };
@@ -98,6 +100,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D4B5FC3254BA99A0003A8C2 /* ScrollDelete */ = {
+			isa = PBXGroup;
+			children = (
+				0D4B5FC4254BA9B30003A8C2 /* Delete.swift */,
+			);
+			path = ScrollDelete;
+			sourceTree = "<group>";
+		};
 		0D91A1172505D8AF00166E58 = {
 			isa = PBXGroup;
 			children = (
@@ -133,6 +143,7 @@
 				0D69C6422518575D004A324F /* NavgationLink.swift */,
 				0DF7B6112519FDA9005A3D1B /* AccountView.swift */,
 				0DF7B649251AFB48005A3D1B /* FormValidator.swift */,
+				0D4B5FC3254BA99A0003A8C2 /* ScrollDelete */,
 				0D947E2A253E86DF00A468C7 /* ShareData */,
 				0D91A1272505D8AF00166E58 /* Assets.xcassets */,
 				0D91A12C2505D8AF00166E58 /* Info.plist */,
@@ -316,6 +327,7 @@
 				0D1C585725062BDE00B750C0 /* CardView.swift in Sources */,
 				0DF7B6122519FDA9005A3D1B /* AccountView.swift in Sources */,
 				0D69C64825185769004A324F /* Article.swift in Sources */,
+				0D4B5FC5254BA9B30003A8C2 /* Delete.swift in Sources */,
 				0D91A1242505D8AF00166E58 /* SWApp.swift in Sources */,
 				0D69CE982508D005002B1443 /* State.swift in Sources */,
 				0D69CE9A2508D57A002B1443 /* Path.swift in Sources */,

@@ -67,6 +67,8 @@ struct Restaurant: Identifiable {
     var id: UUID = UUID()
     var name: String
     var image: String
+    var isFavorite: Bool = false
+    var isCheckIn: Bool = false
 }
 
 private struct Row: View {
