@@ -92,7 +92,15 @@ struct WalletView: View {
         guard let cardIndex = cards.firstIndex(where: { $0.id == card.id }) else {
             return 0.0
         }
-        return -Double(cardIndex)
+        let defaultZIndex = -Double(cardIndex)
+
+        if let draggingIndex = dragState.index,
+            cardIndex == draggingIndex {
+            // we compute the new z-index based on the translation's height
+            return defaultZIndex + Double(dragState.translation.height/cardOffset)
+        }
+
+        return defaultZIndex
     }
     private func offset(_ card: Card) -> CGSize {
         guard let cardIndex = cards.firstIndex(where: { $0.id == card.id }) else {
