@@ -76,7 +76,7 @@ struct SimultaneousView: View {
                     .updating($dragState, body: { (value, state, transaction) in
                         switch value {
                         case .first(true):
-                            state = .pressing
+                            state = .pressing()
                         case .second(true, let drag):
                             state = .dragging(translation: drag?.translation ?? .zero)
                         default:
@@ -101,12 +101,12 @@ struct Guesture_Previews: PreviewProvider {
 }
 
 enum DragState {
-    case inactive, pressing, dragging(translation: CGSize)
+    case inactive, pressing(index: Int? = nil), dragging(index: Int? = nil, translation: CGSize)
     var translation: CGSize {
         switch self {
         case .inactive, .pressing:
             return .zero
-        case .dragging(let translation):
+        case .dragging(_ ,let translation):
             return translation
         }
     }
@@ -125,6 +125,15 @@ enum DragState {
             return true
         case .inactive, .pressing:
             return false
+        }
+    }
+
+    var index: Int? {
+        switch self {
+        case .pressing(let index), .dragging(let index, _):
+            return index
+        case .inactive:
+            return nil
         }
     }
 }

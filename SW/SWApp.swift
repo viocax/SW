@@ -14,7 +14,8 @@ struct SWApp: App {
         WindowGroup {
 //            FirstView().environmentObject(channelData)
 //            MainView()
-            KivaContentView()
+            WalletView()
+//            KivaContentView()
         }
     }
 }
