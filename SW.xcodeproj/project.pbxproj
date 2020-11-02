@@ -17,6 +17,8 @@
 		0D69CE9A2508D57A002B1443 /* Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D69CE992508D57A002B1443 /* Path.swift */; };
 		0D69CE9C2509E1D9002B1443 /* Transition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D69CE9B2509E1D9002B1443 /* Transition.swift */; };
 		0D69CE9E250A0525002B1443 /* ListPreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D69CE9D250A0525002B1443 /* ListPreView.swift */; };
+		0D891B8F254FBB3E001DB7ED /* Loan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D891B8E254FBB3E001DB7ED /* Loan.swift */; };
+		0D891B97254FBD2C001DB7ED /* LoanStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D891B96254FBD2C001DB7ED /* LoanStore.swift */; };
 		0D91A1242505D8AF00166E58 /* SWApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D91A1232505D8AF00166E58 /* SWApp.swift */; };
 		0D91A1262505D8AF00166E58 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D91A1252505D8AF00166E58 /* ContentView.swift */; };
 		0D91A1282505D8AF00166E58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D91A1272505D8AF00166E58 /* Assets.xcassets */; };
@@ -61,6 +63,8 @@
 		0D69CE992508D57A002B1443 /* Path.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Path.swift; sourceTree = "<group>"; };
 		0D69CE9B2509E1D9002B1443 /* Transition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transition.swift; sourceTree = "<group>"; };
 		0D69CE9D250A0525002B1443 /* ListPreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPreView.swift; sourceTree = "<group>"; };
+		0D891B8E254FBB3E001DB7ED /* Loan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loan.swift; sourceTree = "<group>"; };
+		0D891B96254FBD2C001DB7ED /* LoanStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanStore.swift; sourceTree = "<group>"; };
 		0D91A1202505D8AF00166E58 /* SW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SW.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D91A1232505D8AF00166E58 /* SWApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWApp.swift; sourceTree = "<group>"; };
 		0D91A1252505D8AF00166E58 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -124,6 +128,15 @@
 			path = Guesture;
 			sourceTree = "<group>";
 		};
+		0D891B8D254FBB1D001DB7ED /* Kiva */ = {
+			isa = PBXGroup;
+			children = (
+				0D891B8E254FBB3E001DB7ED /* Loan.swift */,
+				0D891B96254FBD2C001DB7ED /* LoanStore.swift */,
+			);
+			path = Kiva;
+			sourceTree = "<group>";
+		};
 		0D91A1172505D8AF00166E58 = {
 			isa = PBXGroup;
 			children = (
@@ -163,6 +176,7 @@
 				0D4B5FCC254BAD430003A8C2 /* Guesture */,
 				0D947E2A253E86DF00A468C7 /* ShareData */,
 				0D939CE1254F9B4D004EDC5C /* Tinder */,
+				0D891B8D254FBB1D001DB7ED /* Kiva */,
 				0D91A1272505D8AF00166E58 /* Assets.xcassets */,
 				0D91A12C2505D8AF00166E58 /* Info.plist */,
 				0D91A1292505D8AF00166E58 /* Preview Content */,
@@ -355,12 +369,14 @@
 				0D91A1262505D8AF00166E58 /* ContentView.swift in Sources */,
 				0D69CE9E250A0525002B1443 /* ListPreView.swift in Sources */,
 				0D1C585725062BDE00B750C0 /* CardView.swift in Sources */,
+				0D891B8F254FBB3E001DB7ED /* Loan.swift in Sources */,
 				0DF7B6122519FDA9005A3D1B /* AccountView.swift in Sources */,
 				0D69C64825185769004A324F /* Article.swift in Sources */,
 				0D4B5FC5254BA9B30003A8C2 /* Delete.swift in Sources */,
 				0D939CEB254F9FB5004EDC5C /* MainView.swift in Sources */,
 				0D91A1242505D8AF00166E58 /* SWApp.swift in Sources */,
 				0D69CE982508D005002B1443 /* State.swift in Sources */,
+				0D891B97254FBD2C001DB7ED /* LoanStore.swift in Sources */,
 				0D939CDD254F9B33004EDC5C /* Trips.swift in Sources */,
 				0D69CE9A2508D57A002B1443 /* Path.swift in Sources */,
 				0D69C6432518575D004A324F /* NavgationLink.swift in Sources */,

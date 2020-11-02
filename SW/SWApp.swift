@@ -13,7 +13,8 @@ struct SWApp: App {
     var body: some Scene {
         WindowGroup {
 //            FirstView().environmentObject(channelData)
-            MainView()
+//            MainView()
+            KivaContentView()
         }
     }
 }
