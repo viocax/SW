@@ -23,6 +23,9 @@
 		0D91A12B2505D8AF00166E58 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D91A12A2505D8AF00166E58 /* Preview Assets.xcassets */; };
 		0D91A1362505D8B000166E58 /* SWTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D91A1352505D8B000166E58 /* SWTests.swift */; };
 		0D91A1412505D8B000166E58 /* SWUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D91A1402505D8B000166E58 /* SWUITests.swift */; };
+		0D939CDD254F9B33004EDC5C /* Trips.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D939CDC254F9B33004EDC5C /* Trips.swift */; };
+		0D939CE6254F9CB7004EDC5C /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D939CE5254F9CB7004EDC5C /* Card.swift */; };
+		0D939CEB254F9FB5004EDC5C /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D939CEA254F9FB5004EDC5C /* MainView.swift */; };
 		0D947E2C253E883D00A468C7 /* FirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D947E2B253E883D00A468C7 /* FirstView.swift */; };
 		0D947E37253E89A000A468C7 /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D947E36253E89A000A468C7 /* SecondView.swift */; };
 		0D947E3C253E8A6000A468C7 /* ChannelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D947E3B253E8A6000A468C7 /* ChannelView.swift */; };
@@ -70,6 +73,9 @@
 		0D91A13C2505D8B000166E58 /* SWUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SWUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D91A1402505D8B000166E58 /* SWUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWUITests.swift; sourceTree = "<group>"; };
 		0D91A1422505D8B000166E58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D939CDC254F9B33004EDC5C /* Trips.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trips.swift; sourceTree = "<group>"; };
+		0D939CE5254F9CB7004EDC5C /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		0D939CEA254F9FB5004EDC5C /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		0D947E2B253E883D00A468C7 /* FirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstView.swift; sourceTree = "<group>"; };
 		0D947E36253E89A000A468C7 /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
 		0D947E3B253E8A6000A468C7 /* ChannelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelView.swift; sourceTree = "<group>"; };
@@ -156,6 +162,7 @@
 				0D4B5FC3254BA99A0003A8C2 /* ScrollDelete */,
 				0D4B5FCC254BAD430003A8C2 /* Guesture */,
 				0D947E2A253E86DF00A468C7 /* ShareData */,
+				0D939CE1254F9B4D004EDC5C /* Tinder */,
 				0D91A1272505D8AF00166E58 /* Assets.xcassets */,
 				0D91A12C2505D8AF00166E58 /* Info.plist */,
 				0D91A1292505D8AF00166E58 /* Preview Content */,
@@ -187,6 +194,16 @@
 				0D91A1422505D8B000166E58 /* Info.plist */,
 			);
 			path = SWUITests;
+			sourceTree = "<group>";
+		};
+		0D939CE1254F9B4D004EDC5C /* Tinder */ = {
+			isa = PBXGroup;
+			children = (
+				0D939CDC254F9B33004EDC5C /* Trips.swift */,
+				0D939CE5254F9CB7004EDC5C /* Card.swift */,
+				0D939CEA254F9FB5004EDC5C /* MainView.swift */,
+			);
+			path = Tinder;
 			sourceTree = "<group>";
 		};
 		0D947E2A253E86DF00A468C7 /* ShareData */ = {
@@ -330,6 +347,7 @@
 			files = (
 				0D947E37253E89A000A468C7 /* SecondView.swift in Sources */,
 				0DF7B64A251AFB48005A3D1B /* FormValidator.swift in Sources */,
+				0D939CE6254F9CB7004EDC5C /* Card.swift in Sources */,
 				0D69CE9C2509E1D9002B1443 /* Transition.swift in Sources */,
 				0D947E3C253E8A6000A468C7 /* ChannelView.swift in Sources */,
 				0D4B5FCE254BAD6A0003A8C2 /* Guesture.swift in Sources */,
@@ -340,8 +358,10 @@
 				0DF7B6122519FDA9005A3D1B /* AccountView.swift in Sources */,
 				0D69C64825185769004A324F /* Article.swift in Sources */,
 				0D4B5FC5254BA9B30003A8C2 /* Delete.swift in Sources */,
+				0D939CEB254F9FB5004EDC5C /* MainView.swift in Sources */,
 				0D91A1242505D8AF00166E58 /* SWApp.swift in Sources */,
 				0D69CE982508D005002B1443 /* State.swift in Sources */,
+				0D939CDD254F9B33004EDC5C /* Trips.swift in Sources */,
 				0D69CE9A2508D57A002B1443 /* Path.swift in Sources */,
 				0D69C6432518575D004A324F /* NavgationLink.swift in Sources */,
 				0D69CE96250873B1002B1443 /* MyButton.swift in Sources */,
