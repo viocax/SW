@@ -10,6 +10,7 @@
 		0D1C585725062BDE00B750C0 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1C585625062BDE00B750C0 /* CardView.swift */; };
 		0D4B5FC5254BA9B30003A8C2 /* Delete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4B5FC4254BA9B30003A8C2 /* Delete.swift */; };
 		0D4B5FCE254BAD6A0003A8C2 /* Guesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4B5FCD254BAD6A0003A8C2 /* Guesture.swift */; };
+		0D4BF555255D27AB00AE78B8 /* MyGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4BF554255D27AB00AE78B8 /* MyGridView.swift */; };
 		0D69C6432518575D004A324F /* NavgationLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D69C6422518575D004A324F /* NavgationLink.swift */; };
 		0D69C64825185769004A324F /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D69C64725185769004A324F /* Article.swift */; };
 		0D69CE96250873B1002B1443 /* MyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D69CE95250873B1002B1443 /* MyButton.swift */; };
@@ -61,6 +62,7 @@
 		0D1C585625062BDE00B750C0 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		0D4B5FC4254BA9B30003A8C2 /* Delete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Delete.swift; sourceTree = "<group>"; };
 		0D4B5FCD254BAD6A0003A8C2 /* Guesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Guesture.swift; sourceTree = "<group>"; };
+		0D4BF554255D27AB00AE78B8 /* MyGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGridView.swift; sourceTree = "<group>"; };
 		0D69C6422518575D004A324F /* NavgationLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavgationLink.swift; sourceTree = "<group>"; };
 		0D69C64725185769004A324F /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 		0D69CE95250873B1002B1443 /* MyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyButton.swift; sourceTree = "<group>"; };
@@ -202,6 +204,7 @@
 				0D91A1252505D8AF00166E58 /* ContentView.swift */,
 				0D1C585625062BDE00B750C0 /* CardView.swift */,
 				0D69CE95250873B1002B1443 /* MyButton.swift */,
+				0D4BF554255D27AB00AE78B8 /* MyGridView.swift */,
 				0D69CE972508D005002B1443 /* State.swift */,
 				0D69CE992508D57A002B1443 /* Path.swift */,
 				0D69CE9B2509E1D9002B1443 /* Transition.swift */,
@@ -404,6 +407,7 @@
 				0D891BAC254FE423001DB7ED /* Card.swift in Sources */,
 				0D891BA7254FE415001DB7ED /* Transaction.swift in Sources */,
 				0D939CE6254F9CB7004EDC5C /* TinderCard.swift in Sources */,
+				0D4BF555255D27AB00AE78B8 /* MyGridView.swift in Sources */,
 				0D891BB9254FE4C3001DB7ED /* CreditCardView.swift in Sources */,
 				0D891B9F254FE3FB001DB7ED /* TransactionHistoryView.swift in Sources */,
 				0D69CE9C2509E1D9002B1443 /* Transition.swift in Sources */,
